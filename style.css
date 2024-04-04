@@ -5,20 +5,38 @@ html {
     color: #ffffff;
 }
 
-h1 {
-    text-transform: uppercase;
+h1, nav li:first-child{
     font-size: 1.5em;
 }
 
 h2, h3 {
-    text-transform: uppercase;
     font-size: 1em;
     color: #590242;
 }
 
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 2em;
+}
+
 p {
     font-size: .75em;
+    line-height: 1.5em;
 }
+
+li {
+    text-transform: uppercase;
+}
+
+nav li:first-child {
+    font-variant-caps: small-caps;
+    text-transform: unset;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: #ffffff;
+  }
 
 /* Style */
 
@@ -32,51 +50,40 @@ body  {
     width: 375px;
     background-color: #ffffff;
   }
-
 #bio {
     background: linear-gradient(90deg, #2104D9, black);
-    padding: 5px 60px 5px 40px;
-    grid-row-start:2;
+    padding: 0px 75px 15px 25px;
+    grid-row-start: 2;
 }
-
+h1{
+    margin: 0;
+}
+#bio p {
+    margin: 0;
+}
 nav{
-    background-color:#020873;
+    background-color: #020873;
     grid-row-start: 1;
 }
-
 nav h2 {
-    display:none;
-    margin:0;
+    display: none;
 }
-
 nav ul {
-    text-decoration:none;
-    text-align:center;
+    text-decoration: none;
+    text-align: center;
 }
-
 nav li {
-    list-style:none;
-    text-transform: uppercase;
+    list-style: none;
     padding: 5px 0 5px 0;
-    grid-row: 1/2;
 }
-
 nav li:first-child {
-    font-size:1.5em;
-    font-variant: small-caps;
     position: absolute;
-    left: 40%;
-    top:11px;
+    top: 11px;
+    padding-left: 120px;
 }
-
-a:link, a:visited, a:hover, a:active {
-    color: #ffffff;
-  }
-
 a {
     text-decoration: none;
 }
-
 ul{
     overflow: hidden;
     max-height: 0;
@@ -84,7 +91,6 @@ ul{
     margin:0;
     padding-left:0;
 }
-
 label {
     cursor: pointer;
     display: inline-block;
@@ -280,6 +286,7 @@ footer {
 
     nav li:first-child {
         position:unset;
+        padding-left: 0;
     }
 
     main{
