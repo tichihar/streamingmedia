@@ -4,46 +4,40 @@ html {
     font-family: Optima, sans-serif;
     color: #ffffff;
 }
-
 h1, nav li:first-child{
     font-size: 1.5em;
 }
-
 h2, h3 {
     font-size: 1em;
     color: #590242;
 }
-
 h1, h2, h3 {
     text-transform: uppercase;
     font-weight: bold;
     line-height: 2em;
 }
-
 p {
     font-size: .75em;
     line-height: 1.5em;
 }
-
 li {
     text-transform: uppercase;
 }
-
 nav li:first-child {
-    font-variant-caps: small-caps;
+    font-variant: small-caps;
     text-transform: unset;
 }
-
 a:link, a:visited, a:hover, a:active {
     color: #ffffff;
-  }
-
+}
+#links a {
+    font-size: .75em;
+}
 /* Style */
 
 html {
     background-color: #020659;
 }
-
 body  {
     display: grid;
     margin: 0 auto;
@@ -78,8 +72,8 @@ nav li {
 }
 nav li:first-child {
     position: absolute;
+    margin-left: 125px;
     top: 11px;
-    padding-left: 120px;
 }
 a {
     text-decoration: none;
@@ -90,6 +84,7 @@ ul{
     transition: max-height .2s ease-out;
     margin:0;
     padding-left:0;
+    padding-bottom: 5px;
 }
 label {
     cursor: pointer;
@@ -139,20 +134,16 @@ input:checked ~ label span:after {
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
-
 #trending_box, #playlists_box, #curated_box {
-    margin-top: 25px;
-    margin-bottom:25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
-
-h3 {
-    padding-left: 10%;
-    padding-bottom:2%;
+h2 {
+    padding-left: 30px;
+    margin-bottom: 0;
 }
-
 #links {
     margin:2% 0 5% 10%;
-    font-size: .75em;
     width:150px;
     padding-top:8px;
     padding-bottom:8px;
@@ -161,11 +152,9 @@ h3 {
     text-align:center;
     border-radius: 5px;
 }
-
 #links:hover {
     background-color: #020659;
 }
-
 #trending, #playlists, #curated {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -231,7 +220,6 @@ audio::-webkit-media-controls-enclosure {
 }
 
 #playlists section, #curated section {
-    color:#ffffff;
     width:150px;
     text-align: center;
     margin: 10px 20px 10px 10px;
@@ -286,7 +274,6 @@ footer {
 
     nav li:first-child {
         position:unset;
-        padding-left: 0;
     }
 
     main{
